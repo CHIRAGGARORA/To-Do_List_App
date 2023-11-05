@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E24B986D2AF6E1E1005E451D /* To_Do_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24B986C2AF6E1E1005E451D /* To_Do_Model.swift */; };
+		E24B986F2AF6E3E6005E451D /* To_Do_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24B986E2AF6E3E6005E451D /* To_Do_ViewModel.swift */; };
 		E26455402AF66C780074DB5D /* To_Do_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E264553F2AF66C780074DB5D /* To_Do_ListApp.swift */; };
-		E26455422AF66C780074DB5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26455412AF66C780074DB5D /* ContentView.swift */; };
+		E26455422AF66C780074DB5D /* To_Do_ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26455412AF66C780074DB5D /* To_Do_ListView.swift */; };
 		E26455442AF66C7B0074DB5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26455432AF66C7B0074DB5D /* Assets.xcassets */; };
 		E26455472AF66C7B0074DB5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26455462AF66C7B0074DB5D /* Preview Assets.xcassets */; };
+		E26455512AF676910074DB5D /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26455502AF676910074DB5D /* DetailedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E24B986C2AF6E1E1005E451D /* To_Do_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_Model.swift; sourceTree = "<group>"; };
+		E24B986E2AF6E3E6005E451D /* To_Do_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ViewModel.swift; sourceTree = "<group>"; };
 		E264553C2AF66C780074DB5D /* To-Do_List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do_List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E264553F2AF66C780074DB5D /* To_Do_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListApp.swift; sourceTree = "<group>"; };
-		E26455412AF66C780074DB5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E26455412AF66C780074DB5D /* To_Do_ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListView.swift; sourceTree = "<group>"; };
 		E26455432AF66C7B0074DB5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26455462AF66C7B0074DB5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E26455502AF676910074DB5D /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		E2B4BD392AF7581400067908 /* To-Do-List-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "To-Do-List-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,11 @@
 		E264553E2AF66C780074DB5D /* To-Do_List */ = {
 			isa = PBXGroup;
 			children = (
+				E2B4BD392AF7581400067908 /* To-Do-List-Info.plist */,
 				E264553F2AF66C780074DB5D /* To_Do_ListApp.swift */,
-				E26455412AF66C780074DB5D /* ContentView.swift */,
+				E264554E2AF676690074DB5D /* Model */,
+				E264554D2AF6765F0074DB5D /* Views */,
+				E264554F2AF676700074DB5D /* ViewModel */,
 				E26455432AF66C7B0074DB5D /* Assets.xcassets */,
 				E26455452AF66C7B0074DB5D /* Preview Content */,
 			);
@@ -65,6 +75,31 @@
 				E26455462AF66C7B0074DB5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E264554D2AF6765F0074DB5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E26455412AF66C780074DB5D /* To_Do_ListView.swift */,
+				E26455502AF676910074DB5D /* DetailedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E264554E2AF676690074DB5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E24B986C2AF6E1E1005E451D /* To_Do_Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E264554F2AF676700074DB5D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E24B986E2AF6E3E6005E451D /* To_Do_ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26455422AF66C780074DB5D /* ContentView.swift in Sources */,
+				E24B986F2AF6E3E6005E451D /* To_Do_ViewModel.swift in Sources */,
+				E26455422AF66C780074DB5D /* To_Do_ListView.swift in Sources */,
+				E24B986D2AF6E1E1005E451D /* To_Do_Model.swift in Sources */,
+				E26455512AF676910074DB5D /* DetailedView.swift in Sources */,
 				E26455402AF66C780074DB5D /* To_Do_ListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,15 +307,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"To-Do_List/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4YS55FQ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "To-Do-List-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -287,6 +329,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chiragarora.To-Do-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,15 +341,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"To-Do_List/Preview Content\"";
 				DEVELOPMENT_TEAM = Q4YS55FQ72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "To-Do-List-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +363,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chiragarora.To-Do-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

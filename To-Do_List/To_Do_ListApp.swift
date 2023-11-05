@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
-struct To_Do_ListApp: App {
+struct To_Do_ListApp: App {  // MAIN THREAD (ALL UI UPDATES FROM HERE)
+    @StateObject var to_Dos = To_Do_ViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            To_Do_ListView()
+                .environmentObject(to_Dos)
         }
     }
 }
